@@ -90,7 +90,7 @@ def name2_check():
 			overlap = '중복된 url이 존재합니다' if (len(origin_urls) != len(urls)) else "" 
 		
 		except:    # 예외가 발생했을 때 실행됨
-			result = '크롤릴 실패'
+			result = '크롤링 실패'
 
 		return render_template('multi_output.html', result = result,overlap=overlap)
 
